@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>谷歌一下,你就知道!</title>
+<style type="text/css">
+/* *{margin:0px;padding:0px;font-size:14px;} 不要使用*，会影响整体的速度，只对需要重置的标签进行定义就可以了,还有当一个属性的数值为 0 时可以不加px，属性中的最后一个分号可以不写（个人习惯） */
+body,div,form,input{font-size:14px;margin:0;padding:0}
+/* a{color:rgb(0, 0, 204);} 我个人还是不习惯使用rgb表示颜色，1.不容易记 2.难于书写 3.不能简写，字符多，个人还是习惯使用十六进制表示颜色你可以去了解一下“web安全色” */
+a{color:#0000cc}
+a:active{color:#f90}
+/* #top_right{position:absolute;top:0px;padding:6px 10px;right:0px;font-size:12px;color:rgb(153, 153, 153);} 重复之前讲的 */
+#top_right{color:#999;font-size:12px;padding:6px 10px;position:absolute;right:0;top:0}
+#top_right a{font-size:12px}
+/*头部结束*/
+#main{margin:25px auto 100px auto;padding:0 35px;width:530px}
+#main h1{margin-bottom:4px;text-align:center}
+#main h1 a img{border:none}
+#main ul{list-style-type:none;padding:0 0 0 45px;width:410px}
+#main ul li{float:left;margin-right:18px}
+#main ul li a.mr{color:#000;font-weight:bold}
+#search_form{clear:both;margin-left:15px;padding-top:4px}
+
+#keyword{
+/* border:1px solid #ccc; 第二个border  */
+/* border:none; 第一个border  */
+/* border-left:1px solid #999; 第四个border  */
+/* border-top:1px solid #999; 第三个border  */
+background:url(http://s1.bdstatic.com/r/www/img/i-1.0.0.png) no-repeat -304px 0px;
+border-color:#999 #ccc #ccc #999;
+border-style:solid;
+border-width:1px;
+float:left;
+font-size:18px;
+height:30px;
+line-height:30px;
+text-indent:10px;
+width:408px;
+}
+/* 上面这四个border属性，这样写感觉不是很好，不易阅读 */
+#main .search_btn{background:url(http://s1.bdstatic.com/r/www/img/i-1.0.0.png) no-repeat 0 0;border:none;cursor:pointer;float:left;font-size:12px;height:32px;line-height:32px;margin-left:6px;width:95px; }
+#main .down_btn{}
+#main p{float:left;margin-top:35px;text-align:center;width:520px; }
+#cl{clear:both}
+/*内容结束*/
+#footer{margin:50px auto;width:600px}
+#footer p{font-size:12px;margin-bottom:15px;text-align:center}
+#footer p.jr{margin-bottom:5px}
+#footer p a{font-size:12px}
+#footer p.bq{color:#77c}
+#footer p.bq a{color:#77c}
+/*尾部结束*/
+/* 之后再说一点，再写注释的时候，尤其是中中有中文的时候，注释的前后加空格，可以防止当文件的字符编码错误时，中文产生乱码导致这个css无效 */
+</style>
+</head>
+<body>
+<div id="top_right">
+<a href="#">搜索设置</a> | <a href="#">登陆</a> <a href="#">注册</a>
+</div>
+<div id="main">
+<h1>
+<a href="#" class="logo"><img src="./logo.png" width="270px"></a></h1>
+<ul class="nav">
+<li><a href="#">新闻</a></li>
+<li><a href="#" class="mr">网页</a></li>
+<li><a href="#">贴吧</a></li>
+<li><a href="#">知道</a></li>
+<li><a href="#">MP3</a></li>
+<li><a href="#">图片</a></li>
+<li><a href="#">视频</a></li>
+<li><a href="#">地图</a></li>
+</ul>
+<form action="http://203.116.165.158/search" method="get" id="search_form">
+<input name="hl" type="hidden" value="zh-CN" />
+<input name="q" type="text" id="keyword" />
+<input name="" type="submit" value="谷歌一下" class="search_btn" onmouseout="'this.className='search_btn'" onmousedown="'this.className.down_btn'">
+</form>
+<p>
+<a href="#">空间</a>
+<a href="#">百科</a>
+<a href="#">hao123</a> |
+<a href="#">更多&gt;&gt;</a>
+</p><div id="cl"></div>
+</div>
+<div id="footer">
+<p>
+<a href="#">设为主页</a>
+</p>
+<p class="bq">
+2014 &copy; <a href="http://bullsoft.org" target="_blank">BullSoft.org</a>
+</p>
+</div>
+
+</body></html>
